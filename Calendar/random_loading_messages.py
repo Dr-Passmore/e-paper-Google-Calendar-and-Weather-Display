@@ -1,5 +1,6 @@
 import random
 
+#Provides a list of random loading messages. Nerd culture natually.
 list_of_loading_messages = [
     "Adding Randomly Mispeled Words Into Text",
     "Doing Something You Don't Wanna Know About",

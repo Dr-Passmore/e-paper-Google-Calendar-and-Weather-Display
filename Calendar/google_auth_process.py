@@ -4,6 +4,7 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 import os.path
 import logging
+#Imports epd so if the process gets stuck on creds the screen is turned off. 
 from waveshare_epd import epd7in5b_V2
 epd = epd7in5b_V2.EPD()
 
@@ -18,6 +19,7 @@ class googlecreds:
     #Uses Credentials.json - Requires a URL to be clicked and the approval process to be followed first run. 
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
+            #In the event that the token has expired and needs user interaction the screen is put to sleep
             logging.info("Putting display to sleep")
             epd.sleep()
             creds.refresh(Request())

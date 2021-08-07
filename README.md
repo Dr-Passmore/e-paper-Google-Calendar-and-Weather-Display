@@ -31,6 +31,6 @@ sudo pip install RPi.GPIO\
 cd\
 wget <https://github.com/waveshare/e-Paper/archive/refs/heads/master.tar.gz>\
 tar zxvf master.tar.gz\
-cd e-Paper-master/RaspberryPi_JetsonNano/python/examples\
+cd e-Paper-master/RaspberryPi_JetsonNano/python/examples
 
-Run the example file that matches your e-ink screen\
+Run the example file that matches your e-ink screen

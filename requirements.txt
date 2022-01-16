@@ -1,6 +1,6 @@
 requests==2.25.1
 google_auth_oauthlib==0.4.4
-numpy==1.20.3
+numpy>=1.21
 google_api_python_client==2.14.0
 Pillow==9.1.0
 protobuf==3.17.3
